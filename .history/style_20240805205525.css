@@ -329,22 +329,20 @@ input{
   .featuressection {
       padding: 1rem;
   }
-
+/*
   .features img {
-      width: 30rem; 
+      width: 8rem; 
   }
-.featurescard{
-   width: 24rem;
-}
+*/
   .featurescard h1 {
       font-size: 1.5rem;
   }
 
   .featurescard p {
-      font-size: 1.3rem;
+      font-size: 1rem;
   }
 
   .featurescard button {
-      font-size: 1.3rem;
+      font-size: 0.9rem;
   }
 }

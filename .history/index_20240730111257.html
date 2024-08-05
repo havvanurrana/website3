@@ -41,27 +41,25 @@
             <a href="#" class="navbarsect">Contact</a>
             <a href="#" class="navbarsect">Sign Up</a>
         </nav>
-        <div class="buttons">
-            <button>LOG IN</button>
-            <button>
-                <select id="Language " name="Language">
-                    <option value="">LANGUAGE</option>
-                    <option value="uk">UK</option>
-                    <option value="turk">Turkish</option>
-                    <option value="sp">Spanish</option>
-                    <option value="fr">French</option>
-                </select>
-            </button>
-            <div id="menu" class="toggle-menu">
-                <input type="checkbox" id="switch">
-                <button>
-                    <label for="switch" class="fas fa-bars"></label>
-                </button>
-                
-            </div>
-        </div>
+     
     </header>
- 
+    <div class="buttons">
+        <button>LOG IN</button>
+        <button>
+            <select id="language" name="language">
+                <option value="">language</option>
+                <option value="uk">UK</option>
+                <option value="turk">Turkish</option>
+                <option value="sp">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+        </button>
+            <div class="toggle-menu">
+                <button>
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+    </div>
     <!--features kısmı -->
     <div class="featureshead">
         <h1>Features</h1>
@@ -116,7 +114,6 @@
         <div class="contact">
         <div class="contact-text">
             <h1>Contact</h1>
-            <br><br>
             <p>
               Questions or concerns? Just fill out the form below and our support
               team will get back to you within 24 hours
@@ -141,7 +138,6 @@
             name="username"
             placeholder="Phone Number"
             />
-        
             <select id="service" name="service">
             <option value="">Select a service</option>
             <option value="service1">Service 1</option>
@@ -149,16 +145,19 @@
             <option value="service3">Service 3</option>
             <option value="service4">Service 4</option>
             </select>
-            <br><br>
             <button>Submit now</button>
         </div>
     </div>
     </section>
     <script>
-            document.getElementById('menu').addEventListener('click', function() {
-            const navbar = document.querySelector('.header-menu .navbar');
-            navbar.classList.toggle('active');
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.getElementById('menu-icon');
+  const navList = document.getElementById('nav-list');
+
+  menuIcon.addEventListener('click', function() {
+    navList.classList.toggle('show');
+  });
+});
     </script>
   </body>
 </html>

@@ -1,6 +1,4 @@
-
 /* genel*/
-
 *{
    margin:0;
    padding: 0;
@@ -65,8 +63,10 @@ button{
 }
  .header-menu .buttons{
    padding-left: 10px;
+  /* left: 1000px;*/
    display: flex;
    justify-content: flex-end;
+ /* position: absolute;*/
 }
 #menu{
    display: none;
@@ -80,6 +80,7 @@ button{
    background:  url(../assets/image1.png)
    no-repeat;
    background-size: cover;
+  /* margin-top: -9.5rem;*/
 }
 
 .overview-section .content {
@@ -87,25 +88,23 @@ button{
    margin: 0.5rem;
    z-index: 2;
 }
-
 .overview-section .content h3{
    font-size: 6rem;
    margin: 0.5rem;
    color: white;
 }
-
 .overview-section .content p{
    font-size: 1.7rem;
    margin: 1.5rem;
    color: white;
 }
-
 .overview-section .content button{
    border:1px;
    width: 100px;
    height: 40px;
    border-radius: 6px;
    color: red;
+
 }
 
 .linear-gradient{
@@ -121,20 +120,15 @@ button{
    background: none;
    color: white;
 }
-
 /* features kısmı*/
-
 /* başlık*/
-
 .featureshead{
    text-align: center;
    justify-content: center;
    margin: 1rem;
    padding: 1rem;
 }
-
 /* Kartlar*/
-
 .features{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -199,8 +193,9 @@ button{
    font-size: 16px;
 }
  .contact .contact-text{
-   width: 30%;
-   height: 40rem;
+width: 30%;
+height: 40rem;
+background-color: rgb(43, 153, 153);
 }
 input{
    width: 255px;
@@ -230,9 +225,15 @@ input{
    height: 40rem;
    align-items: center;
    justify-content: center;
+   background-color: aqua;
    text-align: center;
 }
 
+
+/*.contact-text{
+   width: 60%;
+   height: 700px;
+}*/
 input{
    width: 255px;
    height: 60px;
@@ -257,94 +258,91 @@ input{
 }
 
 
-/* Toggle menu ve responsive kısım */
-@media (max-width: 1000px) {
-   html {
-       font-size: 55%;
+/* toggle menu ve responsive kısım*/
+
+@media (max-width:1000px){
+   html{
+      font-size: 55%;
    }
 }
-
-@media (max-width: 800px) {
-
-   /* header responsive*/
-   #menu {
-       display: inline-block;
+@media (max-width :800px){
+   #menu{
+      display: inline-block;
    }
-
    .header-menu .navbar {
-       display: none;
-       flex-direction: column;
-       position: absolute;
-       top: 95%;
-       left: 55%;
-       background-color: white;
-       height: calc(100vh - 9rem);
-       width: 25rem;
-       right: -100%;
-       transition: right 0.3s ease;
-       color: black;
-       justify-content: center;
-       box-shadow: 0px 0px 10px 2px rgba(56, 55, 55, 0.75);
-   }
-
-   .header-menu .navbar.active {
-       display: flex; 
-       right: 0;
-   }
-
-   .header-menu .navbar a,
-      .header-menu .navbar div {
-         margin: 5rem ;
-      }
-   .toggle-menu button {
-       background: none;
-       border: none;
-       color: rgb(255, 255, 255);
-       font-size: 2rem;
-   }
-   #switch {
-      display: none; 
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      top: 95%;
+      left: 55%;
+      background-color: white;
+      height: calc(100vh - 9rem);
+      width: 25rem;
+      right: -100%;
+      transition: right 0.3s ease;
+      color: black;
+      justify-content: center;
   }
-/* contact responsive*/
+  .header-menu .navbar.active {
+      right: 0;
+  }
+  
+.toggle-menu.active + .navbar {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   background-color: #333;
+   z-index: 1;
+}
+
+.toggle-menu button {
+   background: none;
+   border: none;
+   color: rgb(255, 255, 255);
+   font-size: 2rem;
+}
+}
+ /*
+@media (max-width: 1200px) {
+   .navbar {
+       display: none;
+   }
+   .toggle-menu {
+       display: block; 
+       left: 90%;
+       position: absolute;
+   }
    .contact {
       flex-direction: column;
       align-items: center;
-   }
-   .contact .contact-text,
-   .contact .input {
-      width: 80%;
+}
+
+.contact-text, .contact div {
+      width: 100%;
+      padding: 0;
       margin: 1rem 0;
-   }
-
-   /* features responsive*/
-   .featureshead {
-      margin: 1rem;
-      padding: 1rem;
-  }
-
-  .features {
-      padding: 0 2rem;
-  }
-
-  .featuressection {
-      padding: 1rem;
-  }
-
-  .features img {
-      width: 30rem; 
-  }
-.featurescard{
-   width: 24rem;
 }
-  .featurescard h1 {
-      font-size: 1.5rem;
-  }
 
-  .featurescard p {
-      font-size: 1.3rem;
-  }
-
-  .featurescard button {
-      font-size: 1.3rem;
-  }
+.toggle-menu.active + .navbar {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   right: 0;
+   background-color: #333;
+   z-index: 1;
 }
+
+.toggle-menu button {
+   background: none;
+   border: none;
+   color: white;
+   font-size: 2rem;
+}
+
+}*/
+

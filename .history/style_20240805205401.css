@@ -315,7 +315,7 @@ input{
       width: 80%;
       margin: 1rem 0;
    }
-
+   
    /* features responsive*/
    .featureshead {
       margin: 1rem;
@@ -331,20 +331,18 @@ input{
   }
 
   .features img {
-      width: 30rem; 
+      width: 80px; /* Daha küçük cihazlar için daha küçük genişlik */
   }
-.featurescard{
-   width: 24rem;
-}
+
   .featurescard h1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
   }
 
   .featurescard p {
-      font-size: 1.3rem;
+      font-size: 0.9rem;
   }
 
   .featurescard button {
-      font-size: 1.3rem;
+      font-size: 0.9rem;
   }
 }

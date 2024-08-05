@@ -52,13 +52,11 @@
                     <option value="fr">French</option>
                 </select>
             </button>
-            <div id="menu" class="toggle-menu">
-                <input type="checkbox" id="switch">
-                <button>
-                    <label for="switch" class="fas fa-bars"></label>
-                </button>
-                
-            </div>
+                <div id="menu" class="toggle-menu">
+                    <button>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
         </div>
     </header>
  
@@ -155,10 +153,6 @@
     </div>
     </section>
     <script>
-            document.getElementById('menu').addEventListener('click', function() {
-            const navbar = document.querySelector('.header-menu .navbar');
-            navbar.classList.toggle('active');
-        });
     </script>
   </body>
 </html>

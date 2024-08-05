@@ -265,8 +265,6 @@ input{
 }
 
 @media (max-width: 800px) {
-
-   /* header responsive*/
    #menu {
        display: inline-block;
    }
@@ -284,18 +282,17 @@ input{
        transition: right 0.3s ease;
        color: black;
        justify-content: center;
-       box-shadow: 0px 0px 10px 2px rgba(56, 55, 55, 0.75);
+     
    }
 
    .header-menu .navbar.active {
        display: flex; 
        right: 0;
    }
-
    .header-menu .navbar a,
-      .header-menu .navbar div {
-         margin: 5rem ;
-      }
+        .header-menu .navbar div {
+            margin: 5rem ; /* Adjust the margin as needed */
+        }
    .toggle-menu button {
        background: none;
        border: none;
@@ -305,7 +302,7 @@ input{
    #switch {
       display: none; 
   }
-/* contact responsive*/
+
    .contact {
       flex-direction: column;
       align-items: center;
@@ -315,36 +312,4 @@ input{
       width: 80%;
       margin: 1rem 0;
    }
-
-   /* features responsive*/
-   .featureshead {
-      margin: 1rem;
-      padding: 1rem;
-  }
-
-  .features {
-      padding: 0 2rem;
-  }
-
-  .featuressection {
-      padding: 1rem;
-  }
-
-  .features img {
-      width: 30rem; 
-  }
-.featurescard{
-   width: 24rem;
-}
-  .featurescard h1 {
-      font-size: 1.5rem;
-  }
-
-  .featurescard p {
-      font-size: 1.3rem;
-  }
-
-  .featurescard button {
-      font-size: 1.3rem;
-  }
 }

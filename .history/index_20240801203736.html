@@ -44,21 +44,19 @@
         <div class="buttons">
             <button>LOG IN</button>
             <button>
-                <select id="Language " name="Language">
-                    <option value="">LANGUAGE</option>
+                <select id="language" name="language">
+                    <option value="">language</option>
                     <option value="uk">UK</option>
                     <option value="turk">Turkish</option>
                     <option value="sp">Spanish</option>
                     <option value="fr">French</option>
                 </select>
             </button>
-            <div id="menu" class="toggle-menu">
-                <input type="checkbox" id="switch">
-                <button>
-                    <label for="switch" class="fas fa-bars"></label>
-                </button>
-                
-            </div>
+                <div class="toggle-menu">
+                    <button>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
         </div>
     </header>
  
@@ -155,10 +153,6 @@
     </div>
     </section>
     <script>
-            document.getElementById('menu').addEventListener('click', function() {
-            const navbar = document.querySelector('.header-menu .navbar');
-            navbar.classList.toggle('active');
-        });
     </script>
   </body>
 </html>
