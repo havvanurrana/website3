@@ -367,22 +367,14 @@ input{
    width: 100px;
    height: 40px;
   }
-  .overview-section .content button{
-   border:1px;
-   width: 80px;
-   height: 35px;
-   border-radius: 4px;
-   color: red;
-   font-size: 14px;
-}
 }
 
 @media (max-width: 450px) {
    .header-menu .markaamblem h3{
-      font-size: 16px;
+      font-size: 18px;
    }
    .header-menu .markaamblem img{
-      height: 2rem;
+      height: 2.4rem;
 
    }
    .overview-section .content h3{
@@ -395,27 +387,13 @@ input{
       font-size: 1.2rem;
       width: 5rem;
       height: 2rem;
-      border: none;
-      margin: 1px;
-      padding: 1px;
    }
    #menu {
       display: inline-block;
    }
    .header-menu{
-      width: 100%;
+      width: %100;
       justify-content: space-between;
-   }
-   button select{
-      font-size: 1rem;
-   }
-   .overview-section .content button{
-      border:1px;
-      width: 75px;
-      height: 30px;
-      border-radius: 3px;
-      color: red;
-      font-size: 1rem;
    }
    }
    
@@ -437,6 +415,5 @@ input{
       width: 50px;
       height: 20px;
      }
-     
    }
 

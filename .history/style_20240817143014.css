@@ -369,9 +369,9 @@ input{
   }
   .overview-section .content button{
    border:1px;
-   width: 80px;
-   height: 35px;
-   border-radius: 4px;
+   width: 60px;
+   height: 30px;
+   border-radius: 2px;
    color: red;
    font-size: 14px;
 }
@@ -409,14 +409,6 @@ input{
    button select{
       font-size: 1rem;
    }
-   .overview-section .content button{
-      border:1px;
-      width: 75px;
-      height: 30px;
-      border-radius: 3px;
-      color: red;
-      font-size: 1rem;
-   }
    }
    
 @media (max-width: 350px) {
@@ -437,6 +429,5 @@ input{
       width: 50px;
       height: 20px;
      }
-     
    }
 
